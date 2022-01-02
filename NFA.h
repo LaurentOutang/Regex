@@ -4,6 +4,9 @@
 
 class State
 {
+    public:
+    int _last_iteration;
+    private:
     int _c;
     std::vector<State *> _out;//>1 if split
     

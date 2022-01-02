@@ -2,6 +2,7 @@
 #define __REGEX__
 
 #include <string>
+#include <functional>
 #include "NFA.h"
 
 class Regex
@@ -10,7 +11,7 @@ class Regex
     State * _in;//Represents the input of the NFA
     
     public:
-    Regex(std::string const regex);
+    Regex(std::string const regex);//Assuming regex is a valid postfix regex
     bool match(std::string const sentence);
 };
 

@@ -1,6 +1,6 @@
 #include "NFA.h"
 
-State::State(int c, std::vector<State*> out) : _c(c), _out(out)
+State::State(int c, std::vector<State*> out) : _last_iteration(-1), _c(c), _out(out)
 {
 
 }
